@@ -1,11 +1,12 @@
+
+Final Project Report - Ben Beiter, Roghaiyeh Ansari
+
+
 ## Replication of the Paper: System Identification Using Artificial Neural Networks
 
 A significant part of mechanical and electrical engineering is using differential equations to create mathematical models of how real, dynamic systems behave. A dynamic system refers to the general formulation of the equations of motion that define how something moves in the real world. There are three parts to such equations: states (referred to as x), inputs (referred to as u), and outputs (referred to as y), which are all related by differential equations. Controls engineering is then the study of how to choose the inputs u to a system in order to get a desired output y. This process of creating a controller relies on knowing what the differential equations that define a system are, however, for many systems these equations are unknown. The process of finding the equations of motion of an unknown system is called system identification. There are well-established processes to perform system identification, but they often rely on the assumption that the system is linear. For complex, nonlinear systems it is very hard to create an accurate mathematical model.
 
 Recently, neural network research has gained increasing attention, particularly for its ability to learn and reconstruct complex nonlinear mappings. This shows promise for use in system identification, and in the paper chosen, “System Identification Using Artificial Neural Networks”[1],  the author proposes the use of a neural network to do system identification for a non-linear system. Specifically, they propose a Multi-Layer Perceptron (MLP) to predict the output, y, of a system for a given input, u. The paper verified this in simulation by training an MLP on a particular nonlinear system and then comparing the output of the simulated system with the predicted output and showing that they are approximately the same. 
-
-### Replication Process
-The specific result of the paper we will replicate is that an MLP can be trained to predict the output of a first order (only one state), nonlinear system, given any input. The original author of the paper did not share their code, the specific first order system they used, or the details of the structure of the neural network that they used in their paper. Therefore our replication will consist of creating and training our own MLP on a system that we choose. 
 
 The first step in replicating the results from this paper was to write an algorithm to train an MLP Neural Network for our purposes. The main difference between this algorithm and a standard MLP algorithm is that the final output y=f(x), should be a continuous output with a range of all real numbers, so there is no squashing function on this output. Otherwise the algorithm is a standard MLP. It is trained using back-propagation and gradient descent to minimize the output error. 
 
