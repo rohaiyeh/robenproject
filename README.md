@@ -4,7 +4,9 @@ You can use the [editor on GitHub](https://github.com/robenproject/MLE5_Ansari_B
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-These are words that I am adding now.
+Final Project Proposal - Ben Beiter, Roghaiyeh Ansari
+
+Our project will be attempting to reproduce the results of the simulations in the paper: “System Identification Using Artificial Neural Networks”[1]. Dynamic systems in mechanical and electrical engineering can become very complex. 
 
 ### Markdown
 
