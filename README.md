@@ -1,8 +1,9 @@
 ## Welcome to GitHub Pages
 
 
-
-![Test Image 4](https://github.com/bbeiter1/MLE5_Ansari_Betir/blob/master/Report%20Figures/PaperPlot.JPG)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/bbeiter1/MLE5_Ansari_Betir/blob/master/Report%20Figures/PaperPlot.JPG">
+</p>
 
 
 
