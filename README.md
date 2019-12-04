@@ -23,11 +23,11 @@ The paper being replicated [1] gave the following plot as a result to show that 
 </p>
 This plot shows the predicted output of the system approximately tracking the real output of the system despite noise present in the system. To replicate this result we trained a separate MLP to predict the output of a first-order non-linear system and the test of the MLP gave the following result. 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/bbeiter1/MLE5_Ansari_Betir/blob/master/Report%20Figures/Fig_result.JPG">
+  <img width="460" height="300" src="https://github.com/bbeiter1/MLE5_Ansari_Betir/blob/master/Report%20Figures/Fig_result.jpg">
 </p>
 This verifies the results of the paper, confirming that a MLP can predict the output of a non-linear system fairly accurately. However, there were a couple issues we found that were not explored in the original paper. The most impactful of which is that the initial values of the MLP weights can have a significant impact on the accuracy of the MLP. Training the MLP on the same data will yield different results based on the initial values of the weights. The image above was a good result, however, the following plot shows a particularly poor result. 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/bbeiter1/MLE5_Ansari_Betir/blob/master/Report%20Figures/Fig_Poor.JPG">
+  <img width="460" height="300" src="https://github.com/bbeiter1/MLE5_Ansari_Betir/blob/master/Report%20Figures/Fig_Poor.jpg">
 </p>
 Very poor results like this were not very common, but their possibility indicates that a more rigorous way of choosing the initial weight values is needed to be able to use an MLP for reliable system identification. 
 
@@ -35,7 +35,7 @@ Another result of interest is the effect of the other neural network parameters.
 
 An additional topic that the paper did not address is the number of training epochs to use in training the MLP. This number is the parameter with the most impact on the length of time it takes to train the MLP, however it is also directly related to the accuracy of the MLP. Choosing the number of training epochs will always be a trade-off between the MLP accuracy and computational cost. The following figure illustrates this relationship between the number of training epochs and the total prediction error of the MLP over the training data.
 <p align="center">
-  <img width="460" height="300" src="https://github.com/bbeiter1/MLE5_Ansari_Betir/blob/master/Report%20Figures/Fig_Loss.JPG">
+  <img width="460" height="300" src="https://github.com/bbeiter1/MLE5_Ansari_Betir/blob/master/Report%20Figures/Fig_Loss.jpg">
 </p>
 A final observation about the paper is that the result, predicting the output of a system, is not all that is needed to create a controller for the system. The trained neural network is a model of the system, but it is not a model in a form that is used to design a controller. However the neural network model can be transformed into a model that can be used to design a controller. The authors in [3] show how to extract meaningful system parameters from a neural network model. That is the last step to using a learned neural network model to design a controller for an unknown system.
 
@@ -44,7 +44,8 @@ All the code used in this replication study is available in this repository, wit
 ### References
 
 [1] [K.J. Nidhil, S. Sreeraj, B. Vijay y V. Bagyaveereswaran, “System identification using artificial neural network”, Circuit, Power and Computing Technologies (ICCPCT), 2015 International Conference, Nagercoil, 2015.](https://ieeexplore.ieee.org/document/7159360) 
-[2] Mekki, Hassen, and Mohamed Chtourou. "Variable structure neural networks for real-time approximation of continuous-time dynamical systems using evolutionary artificial potential fields." submitted (2012).
-https://www.semanticscholar.org/paper/Variable-Structure-Neural-Networks-for-Real-Time-of-Mekki-Chtourou/92c8286aa0d8c6161072b9c516add292eb36de32
-[3] T. A. Tutunji, “Parametric system identification using neural networks,” Appl. Soft Comput. J., vol. 47, pp. 251–261, 2016 https://www.sciencedirect.com/science/article/pii/S1568494616302137
+
+[2] [Mekki, Hassen, and Mohamed Chtourou. "Variable structure neural networks for real-time approximation of continuous-time dynamical systems using evolutionary artificial potential fields." submitted (2012).](https://www.semanticscholar.org/paper/Variable-Structure-Neural-Networks-for-Real-Time-of-Mekki-Chtourou/92c8286aa0d8c6161072b9c516add292eb36de32)
+
+[3] [T. A. Tutunji, “Parametric system identification using neural networks,” Appl. Soft Comput. J., vol. 47, pp. 251–261, 2016 ](https://www.sciencedirect.com/science/article/pii/S1568494616302137)
 
