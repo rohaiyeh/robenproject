@@ -1,5 +1,5 @@
-
-Final Project Report - Ben Beiter, Roghaiyeh Ansari
+# Github Test Project
+Final Project Report - Roghaiyeh Ansari
 
 
 ## Replication of the Paper: System Identification Using Artificial Neural Networks
