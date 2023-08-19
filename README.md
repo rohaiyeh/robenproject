@@ -1,5 +1,5 @@
-
-Final Project Report - Ben Beiter, Roghaiyeh Ansari
+# Github Test Project
+Final Project Report - Roghaiyeh Ansari
 
 
 ## Replication of the Paper: System Identification Using Artificial Neural Networks
@@ -50,4 +50,8 @@ All the code used in this replication study is available in this repository, wit
 
 [3] [T. A. Tutunji, “Parametric system identification using neural networks,” Appl. Soft Comput. J., vol. 47, pp. 251–261, 2016 ](https://www.sciencedirect.com/science/article/pii/S1568494616302137)
 
-# this is in master
+
+
+## added stuff for test
+[extra test refe] author, topic and date.
+
